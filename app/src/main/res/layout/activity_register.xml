@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#08BD25"
+    android:background="@color/backgroundApp"
     tools:context=".LoginActivity">
 
     <TextView
@@ -65,6 +65,7 @@
         android:paddingEnd="10sp"
         android:textSize="20sp"
         android:hint="password"
+        android:inputType="textPassword"
         android:background="#fff"/>
 
     <TextView
@@ -87,18 +88,19 @@
         android:paddingStart="10sp"
         android:paddingEnd="10sp"
         android:textSize="20sp"
+        android:inputType="textPassword"
         android:hint="masukkan password yang sama"
         android:background="#fff"/>
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/registerBtnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="DAFTAR"
         android:textColor="#fff"
         android:textSize="40sp"
-        android:background="#67D165"
+        android:background="@color/buttonEnabled"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -116,7 +118,7 @@
             android:textSize="20sp"
             android:textColor="#fff"/>
         <TextView
-            android:id="@+id/loginGoToRegister"
+            android:id="@+id/registerGoToLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Masuk"

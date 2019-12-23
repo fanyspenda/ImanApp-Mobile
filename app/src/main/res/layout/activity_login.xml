@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="#08BD25"
     tools:context=".LoginActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username/email"
+        android:text="email"
         android:textSize="18sp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
@@ -41,7 +40,7 @@
         android:paddingStart="10sp"
         android:paddingEnd="10sp"
         android:textSize="20sp"
-        android:hint="Email/Username"
+        android:hint="Email"
         android:background="#fff"/>
 
     <TextView
@@ -61,13 +60,15 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:hint="password"
         android:paddingStart="10sp"
         android:paddingEnd="10sp"
-        android:textSize="20sp"
-        android:hint="password"
-        android:background="#fff"/>
+        android:inputType="textPassword"
+        android:textSize="20sp" />
 
     <Button
+        android:id="@+id/loginBtnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -113,5 +114,5 @@
             android:textStyle="bold"
             android:textColor="#fff"/>
     </LinearLayout>
-
 </LinearLayout>
+

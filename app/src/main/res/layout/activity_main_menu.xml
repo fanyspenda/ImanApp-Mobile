@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundApp"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImanApp"
+        android:fontFamily="cursive"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="50sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainMenuImgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"/>
+
+        <Button
+            android:id="@+id/mainMenuBtnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ambil Gambar"
+            android:textSize="48sp"
+            android:background="@color/buttonEnabled"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>
